@@ -1,0 +1,12 @@
+{
+    "require": {
+        "johnpbloch/wordpress": ">=5.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "mkdir -p wp-content",
+            "rm -rf wordpress/wp-content",
+            "ln -s ../wp-content wordpress/wp-content"
+        ]
+    }
+}
