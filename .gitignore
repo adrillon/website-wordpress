@@ -1,6 +1,9 @@
 composer.phar
 vendor
 wordpress
-wp-content
 wp-config.php
 .htaccess
+
+!wp-content
+wp-content/*
+!wp-content/mu-plugins
