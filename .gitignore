@@ -3,3 +3,4 @@ vendor
 wordpress
 wp-content
 wp-config.php
+.htaccess

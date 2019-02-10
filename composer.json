@@ -1,12 +1,25 @@
 {
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
     "require": {
-        "johnpbloch/wordpress": ">=5.0"
+        "johnpbloch/wordpress": ">=5.0",
+        "wpackagist-plugin/multilingual-press": "<3",
+        "wpackagist-plugin/classic-editor": "<3"
     },
     "scripts": {
-        "post-install-cmd": [
+        "post-autoload-dump": [
             "mkdir -p wp-content",
             "rm -rf wordpress/wp-content",
             "ln -s ../wp-content wordpress/wp-content"
         ]
+    },
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
     }
 }
