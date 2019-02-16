@@ -22,9 +22,16 @@ function add_link_to_translations($response, $post, $request) {
         'type' => 'post',
     ]);
     $response->data['translations'] = array();
+    $original_blog_id = get_current_blog_id();
     foreach ($translations as $t) {
-        $response->data['translations'][$t->get_language()->get_name('lang')] = $t->get_target_content_id();
+        switch_to_blog($t->get_target_site_id());
+        $response->data['translations'][$t->get_language()->get_name('lang')] = [
+            'id' => $t->get_target_content_id(),
+            'title' => $t->get_target_title(),
+            'slug' => get_post_field('post_name', $t->get_target_content_id()),
+        ];
     }
+    switch_to_blog($original_blog_id);
     return $response;
 }
 
