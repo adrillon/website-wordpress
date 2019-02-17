@@ -37,6 +37,12 @@ function register_site_options() {
         'id' => 'slug',
         'type' => 'text',
     ]);
+
+    $mainOptions->add_group_field($contactLinksBox, [
+        'name' => __('FontAwesome class', 'resume'),
+        'id' => 'faclass',
+        'type' => 'text',
+    ]);
 }
 
 /**
