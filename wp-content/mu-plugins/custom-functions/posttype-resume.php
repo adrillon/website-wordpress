@@ -44,6 +44,18 @@ function posttype_resumes_cmb2() {
     ]);
 
     $cmbResumeBox->add_group_field($cmbInfoBox, [
+        'id' => 'website',
+        'name' => __('Website', 'resume'),
+        'type' => 'text_url',
+    ]);
+
+    $cmbResumeBox->add_group_field($cmbInfoBox, [
+        'id' => 'github',
+        'name' => __('GitHub username', 'resume'),
+        'type' => 'text',
+    ]);
+
+    $cmbResumeBox->add_group_field($cmbInfoBox, [
         'id' => 'birthdate',
         'name' => __('Birth date', 'resume'),
         'type' => 'text_date',
