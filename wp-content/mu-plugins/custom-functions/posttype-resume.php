@@ -127,9 +127,6 @@ function posttype_resumes_cmb2() {
         'options' => [
             'url' => false,
         ],
-        'query_args' => [
-            'type' => 'application/pdf',
-        ]
     ]);
 
     // Certifications
@@ -175,9 +172,6 @@ function posttype_resumes_cmb2() {
         'options' => [
             'url' => false,
         ],
-        'query_args' => [
-            'type' => 'application/pdf',
-        ]
     ]);
 
     // Career
