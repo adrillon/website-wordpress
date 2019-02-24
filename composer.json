@@ -9,7 +9,8 @@
         "johnpbloch/wordpress": ">=5.0",
         "wpackagist-plugin/multilingual-press": "<3",
         "wpackagist-plugin/classic-editor": "*",
-        "wpackagist-plugin/cmb2": "*"
+        "wpackagist-plugin/cmb2": "*",
+        "bueltge/multisite-global-media": "*"
     },
     "scripts": {
         "post-autoload-dump": [
@@ -20,7 +21,7 @@
     },
     "extra": {
         "installer-paths": {
-            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin", "type:wordpress-muplugin"]
         }
     }
 }

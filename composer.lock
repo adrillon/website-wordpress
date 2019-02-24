@@ -4,8 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98d8288b815484841a42ee46d5452774",
+    "content-hash": "dc0c6fc995ecd01666d287fddca081d8",
     "packages": [
+        {
+            "name": "bueltge/multisite-global-media",
+            "version": "0.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bueltge/multisite-global-media.git",
+                "reference": "39367f4b35608e01852a139cea144a260079fcfe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bueltge/multisite-global-media/zipball/39367f4b35608e01852a139cea144a260079fcfe",
+                "reference": "39367f4b35608e01852a139cea144a260079fcfe",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.2",
+                "php": ">=7"
+            },
+            "require-dev": {
+                "inpsyde/php-coding-standards": "^0.13",
+                "squizlabs/php_codesniffer": "3.2.*"
+            },
+            "type": "wordpress-muplugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank Bültge",
+                    "email": "frank@bueltge.de",
+                    "homepage": "https://bueltge.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dominik Schilling",
+                    "homepage": "https://dominikschilling.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Multisite Global Media is a WordPress plugin which shares media across the Multisite network.",
+            "homepage": "https://github.com/bueltge/Multisite-Global-Media",
+            "keywords": [
+                "multisite",
+                "muplugin",
+                "wordpress"
+            ],
+            "time": "2018-10-14T19:03:40+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v1.6.0",
@@ -128,20 +177,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.0.3",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "516609b5bc19b1dd7cff9f9b4e9d1026363049ce"
+                "reference": "bdb6632aea9872b7c71322c724a8acfc0ec9ee7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/516609b5bc19b1dd7cff9f9b4e9d1026363049ce",
-                "reference": "516609b5bc19b1dd7cff9f9b4e9d1026363049ce",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/bdb6632aea9872b7c71322c724a8acfc0ec9ee7f",
+                "reference": "bdb6632aea9872b7c71322c724a8acfc0ec9ee7f",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.0.3",
+                "johnpbloch/wordpress-core": "5.1.0",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.3.2"
             },
@@ -163,27 +212,27 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-01-09T18:42:21+00:00"
+            "time": "2019-02-22T18:16:29+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.0.3",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "76c8acab20262adc0eb70d20aace3d36c2f3a16f"
+                "reference": "07c57b738c9967e5643641a44e659b5851c066af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/76c8acab20262adc0eb70d20aace3d36c2f3a16f",
-                "reference": "76c8acab20262adc0eb70d20aace3d36c2f3a16f",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/07c57b738c9967e5643641a44e659b5851c066af",
+                "reference": "07c57b738c9967e5643641a44e659b5851c066af",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "provide": {
-                "wordpress/core-implementation": "5.0.3"
+                "wordpress/core-implementation": "5.1.0"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -203,7 +252,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-01-09T18:42:15+00:00"
+            "time": "2019-02-22T18:16:24+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -264,9 +313,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -284,9 +331,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1548045394",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1548045394"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -304,9 +349,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/multilingual-press.2.11.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/multilingual-press.2.11.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
